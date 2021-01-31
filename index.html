@@ -52,7 +52,7 @@
             <div class="input-group f-class">
                 <div>
                     <label for="">First Class ($150)</label>
-                    <input id='firstclass-count' class="inp-style inp-width" min='0' type="number" value='0'>
+                    <input id='firstclass-count' class="inp-style inp-width" min='0' type="number" value='0' readonly>
                 </div>
                 <div class="plus-minus-btn">
                     <button onclick="ticketCount('firstclass', true)" class='btn-style'>+ </button> 
@@ -63,7 +63,7 @@
             <div class="input-group f-class">
                 <div>
                     <label for="">Economy ($100)</label>
-                    <input id='economy-count' class="inp-style inp-width" min='0' type="number"value='0'>
+                    <input id='economy-count' class="inp-style inp-width" min='0' type="number"value='0' readonly>
                 </div>
                 <div class="plus-minus-btn">
                     <button onclick="ticketCount('economy', true)" class='btn-style'>+ </button> 
@@ -138,15 +138,15 @@
             <hr>
             <div class="amount">
                 <h4>First Class:</h4>
-                <p id='firstclass-cost'> </p>
+                <p>$<span id='firstclass-cost'></span></p>
             </div>
             <div class="amount">
                 <h4>Economy Class:</h4>
-                <p id='economy-cost'> </p>
+                <p>$<span id='economy-cost'></span></p>
             </div>
             <div class="amount">
                 <h1>Total:</h1>
-                <h1 id='total-cost'> </h1>
+                <h1>$<span id='total-cost'></span></h1>
             </div>
             
         </div>
